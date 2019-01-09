@@ -19,7 +19,7 @@ public class ReadWriteTxt {
 			String line = "";
 			line = br.readLine();
 			while (line != null) {
-			line = br.readLine(); // 一次读入一行数�?�
+			line = br.readLine(); // 
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -27,17 +27,17 @@ public class ReadWriteTxt {
 		
 		
 		try {
-		File writename = new File(".\\result\\en\\output.txt"); // 相对路径，如果没有则�?建立一个新的output。txt文件
+		File writename = new File(".\\result\\en\\output.txt"); // 相对路径，如果没有则�?建立一个新的output。txt文件
 		writename.createNewFile(); // 创建新文件
 		BufferedWriter out = new BufferedWriter(new FileWriter(writename));
-		out.write("我会写入文件啦\r\n"); // \r\n�?�为�?�行
+		out.write("我会写入文件啦\r\n"); // \r\n�?�为�?�行
 		out.flush(); // 把缓存区内容压入文件
-		out.close(); // 最�?�记得关闭文件
+		out.close(); // 最�?�记得关闭文件
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		
-		// write at the end without erasing   FileWriter(file name, true) 第二个�?�数为append param
+		// write at the end without erasing   FileWriter(file name, true) 第二个�?�数为append param
 		BufferedWriter out = new BufferedWriter(new FileWriter(file,true));
 
 	}
